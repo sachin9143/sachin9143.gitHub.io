@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="bootstrap.min.css"">
+
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="bootstrap.min.js">
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.x-git.min.js">
+    </script>
+    <style type="text/css">
+        .box{
+            border-color: #ff0000;
+        }
+        .car{
+            border-color: #ff0000;
+            height: 30px;
+            width:60px;
+        }
+        .bike{
+            border-color: #ff0000;
+            height: 30px;
+            width: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="div" ailgn="center" margin="40px">
+            <div>
+                <label><input type="radio" id="box" value="car" name="radio">I have a car</label>
+                <label><input type="radio" id="box1" value="bike" name="radio">I have a bike</label>
+
+                <div class="car">my car</div>
+                <div class="bike">my bike</div>
+                <div class="box" ></div>
+            </div>
+        </div>
+    </div>
+<script>
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function(){
+            if($(this).attr("value")=="car"){
+                $('.box').not(".red").hide();
+                $('.red').css("border","1px solid red")
+                $('.red').show();
+            }
+
+
+            if($(this).attr("value")=="bike"){
+                $('.box').not(".blue").hide();
+                $('.blue').css("border","1px solid blue")
+                $('.blue').show();
+
+
+            }
+        });
+    });
+  </script>
+</body>
+</html>
