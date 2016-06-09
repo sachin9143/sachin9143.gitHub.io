@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="bootstrap.min.css"">
+
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="bootstrap.min.js">
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.x-git.min.js">
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row" align="center" style="margin-top: 50px" >
+            <button class="btn-success" id="btn1">Count Plz...</button>
+
+            <div id="div" class="col-md-12">
+
+            </div>
+
+        </div>
+    </div>
+<script>
+    var counter=0;
+    $('#btn1').click(function() {
+        counter++;
+        $('#div').html('counter=' + counter);
+    });
+</script>
+</body>
+</html>
