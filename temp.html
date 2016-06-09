@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="bootstrap.min.css"">
+
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="bootstrap.min.js">
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.x-git.min.js">
+    </script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div align="center" class="col-md-offset-2 col-md-8">
+                <h1>Slide Me</h1>
+            </div>
+            <div align="center" class="col-md-offset-2 col-md-8">
+                <h2>Hide Me</h2>
+            </div>
+             <div align="center" class="col-md-offset-2 col-md-8">
+                 <button class="btn-success" id="submitbtn">Slide Me Up</button><br>
+             </div>
+            <div align="center" class="col-md-offset-2 col-md-8">
+                <button class="btn-success" id="submitbtn1">Hide Me Now</button>
+            </div>
+             </div>
+        </div>
+    </div>
+    <script>
+        $("h1").click(function(){
+            $(this).slideUp();
+        });
+    </script>
+    <script>
+        $("h2").click(function(){
+            $(this).hide();
+        });
+    </script>
+        <script>
+            $("#submitbtn").click(function(){
+                $(this).slideUp();
+            });
+        </script>
+    <script>
+        $("#submitbtn1").click(function(){
+            $(this).hide();
+        });
+    </script>
+
+</body>
+</html>
